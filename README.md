@@ -1,4 +1,4 @@
-# Desafio Técnico Turma de Estágio 2022
+# Desafio Técnico Loggi.
 
 1. Instalando o projeto:
 Rode os seguintes comandos no terminal:
