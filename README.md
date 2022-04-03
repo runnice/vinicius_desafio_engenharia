@@ -1,6 +1,6 @@
 # Desafio Técnico Loggi.
 
-1. Instalando o projeto:
+Instalando o projeto:
 Rode os seguintes comandos no terminal:
 
 $ git clone https://github.com/runnice/vinicius_desafio_engenharia.git
