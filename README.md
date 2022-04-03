@@ -5,8 +5,8 @@ Rode os seguintes comandos no terminal:
 
 $ git clone https://github.com/runnice/vinicius_desafio_engenharia.git
 
-Na pasta principal execute:
+Execute:
 
-node loggi.js
+$node loggi.js
 
 Qualquer número que desejar testar basta adicionar ao arr na linha 6.
