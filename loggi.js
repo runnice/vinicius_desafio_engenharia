@@ -23,8 +23,7 @@ const arr = [
   "022388555123555",
   "432044555845333",
   "034311555874001",
-  "150150555875888",
-  "201222555875001"
+  
 ];
 
 // Variável de contagem de códigos válidos e inválidos
@@ -167,21 +166,21 @@ arr.forEach((codes, index) => {
   // console.log(content);
   if(Object.prototype.isPrototypeOf(content)) {
 
-    // Group by Destiny
+    // Grupo por Destino
     const regionDestiny = filterRegion('Região de Destino', content);
     regionCounterDestiny[regionDestiny]++
     dataGroupByDestiny[regionDestiny].push(content);
 
-    //Group by Truck
+    //Grupo por Caminhão
     if(regionDestiny[0] === "Norte" || regionDestiny[0] === "Centro-Oeste") {
       sameTruckToNorth.push(content);
     }
 
-    // Group by product
+    // Group por Produto
     const product = content['Tipo do Produto'].match(/Jóias|Livros|Eletrônicos|Bebidas|Brinquedos/g);
     dataGroupByProduct[product].push(content);
 
-    // Group by South origin and Toy
+    // Group Região Sul e Brinquedo
     const south = content['Região de Origem'].match(/Sul/g);
     if(south) {
       content['Tipo do Produto'] === 'Brinquedos' ? toyAndSouth++ : '';
@@ -252,5 +251,6 @@ showSameTruckToNorth(sameTruckToNorth);
 console.log('8 -  Não Processado\n')
 console.log('9 -  Não Processado\n')
 showInvalidCodes(codesCount)
+
 
 
